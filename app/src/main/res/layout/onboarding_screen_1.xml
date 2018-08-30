@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="5"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            card_view:cardBackgroundColor="#b9e2f5"
+            card_view:cardCornerRadius="12dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="48dp"
+            android:layout_weight="3"
+            card_view:cardElevation="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/sun"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_margin="48dp"
+                        android:tint="#fdc23a"
+                        android:alpha="0.2"
+                        android:src="@drawable/sun"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_margin="50dp"
+                        android:tint="#fdc23a"
+                        android:alpha="0.2"
+                        android:src="@drawable/sun"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_margin="52dp"
+                        android:tint="#fdc23a"
+                        android:src="@drawable/sun"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:tint="@color/white"
+                    android:id="@+id/plane_card_1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/plane"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:tint="@color/white"
+                    android:id="@+id/bird_card_1"
+                    android:layout_marginRight="48dp"
+                    android:adjustViewBounds="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="160dp"
+                    android:src="@drawable/bird"
+                    android:layout_width="72sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="48dp" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_marginLeft="-72dp"
+                    android:layout_marginBottom="115.4dp"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/balloon_card_1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/balloon"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-72dp" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/city_card_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

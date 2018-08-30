@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="radius">12dp</dimen>
+    <dimen name="margin">48dp</dimen>
+    <dimen name="verticalSpace">29dp</dimen>
+    <dimen name="traverse_distance">48dp</dimen>
+</resources>

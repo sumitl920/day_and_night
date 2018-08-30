@@ -1,0 +1,171 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_margin="96dp"
+            android:tint="@color/black"
+            android:alpha="0.2"
+            android:src="@drawable/sun"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_margin="98dp"
+            android:tint="@color/black"
+            android:alpha="0.2"
+            android:src="@drawable/sun"
+            android:layout_width="44dp"
+            android:layout_height="44dp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_margin="100dp"
+            android:tint="@color/black"
+            android:src="@drawable/sun"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/city_hidden"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginLeft="-80dp"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="-80dp"
+            tools:ignore="UselessParent">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/city_0"
+                android:layout_marginLeft="200dp"
+                android:layout_marginBottom="-20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/city_0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="200dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/city_wrapper"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginLeft="-80dp"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="-80dp"
+            tools:ignore="UselessParent">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_marginLeft="200dp"
+                android:layout_marginBottom="-20dp"
+                android:id="@+id/city_1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/city_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="200dp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/city_2"
+                android:scaleType="centerCrop"
+                android:src="@drawable/city_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_marginLeft="-120dp"
+                android:id="@+id/city_3"
+                android:layout_marginBottom="-60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/city_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="-160dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            tools:ignore="UselessParent">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_marginLeft="48dp"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/plane_main"
+                android:adjustViewBounds="true"
+                android:src="@drawable/plane"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_marginLeft="-24dp"
+                android:layout_marginBottom="96dp"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/balloon_main"
+                android:adjustViewBounds="true"
+                android:src="@drawable/balloon_grey"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-24dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_gravity="end"
+        android:id="@+id/bird_main"
+        android:adjustViewBounds="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="208dp"
+        android:layout_marginRight="96dp"
+        android:src="@drawable/bird"
+        android:layout_width="72sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="96dp" />
+
+    <android.support.v4.view.ViewPager
+        android:visibility="visible"
+        android:id="@+id/view_pager"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</android.support.design.widget.CoordinatorLayout>
